@@ -1,0 +1,424 @@
+
+/* ↓リセットCSS(115行目まで) */
+
+
+html{
+  color:#000;
+  background:#FFF;
+}
+/*
+  TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+  TODO test putting a class on HEAD.
+      - Fails on FF.
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin:10;
+  padding:10;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+fieldset,
+img {
+  border:0;
+}
+/*
+  TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style:normal;
+  font-weight:normal;
+}
+
+ol,
+ul {
+  list-style:none;
+}
+
+caption,
+th {
+  text-align:left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size:100%;
+  font-weight:normal;
+}
+q:before,
+q:after {
+  content:'';
+}
+abbr,
+acronym {
+  border:0;
+  font-variant:normal;
+}
+/* to preserve line-height and selector appearance */
+sup {
+  vertical-align:text-top;
+}
+sub {
+  vertical-align:text-bottom;
+}
+input,
+textarea,
+select {
+  font-family:inherit;
+  font-size:inherit;
+  font-weight:inherit;
+  *font-size:100%; /*to enable resizing for IE*/
+}
+/*because legend doesn't inherit in IE */
+legend {
+  color:#000;
+}
+
+/* ↑リセットCSS */
+
+
+
+/* 親要素の比率で文字サイズを調整するのはJSでやった方が良い？ */
+
+
+* {
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+.Wrapper {
+  background-color:#EEFFFF;
+}
+.header {
+  height: 30%;
+}
+
+.headerImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.firstmessage {
+  opacity: 0;
+  transform : translate(0, 20px);
+  transition : all 4s;
+  font-weight: bold;
+}
+
+.fadein {
+  opacity : 1;
+  transform : translate(0, 0);
+}
+
+.profileField {
+  display: flex;
+  justify-content: center;
+  margin-top: 400px;
+}
+
+.aboutCreator {
+  width: 80%;
+}
+
+.creatorTitle {
+  text-align: center;
+  font-size: 32px;
+}
+
+.creatorContents {
+  background-color: white;
+  height: 400px;
+}
+
+.introduce {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 200px;
+}
+
+.contentsField {
+  margin-top: 200px;
+}
+
+.contentsTitle {
+  text-align: center;
+  font-size:32px;
+}
+
+.contents {
+  padding: 40px 20px;
+  margin: 20px;
+  /* background-color: #FFFAFA;
+  border-radius: 4px;
+  box-shadow: 4px 4px #eae1cf; */
+  display: flex;
+  justify-content: space-around;
+  /* width: 100%; */
+
+}
+
+.contents--image {
+  /* height: 300px; */
+  margin-bottom: 20px;
+  width: 45%;
+  /* background-color: red; */
+}
+
+.contents--texts {
+  height: 300px;
+  width: 45%;
+}
+
+.contents--texts__link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contentsImage {
+  object-fit: cover;
+  width: 100%;
+  /* height: 100%; */
+}
+
+.contents--texts__message {
+  margin-top: 25px;
+}
+
+.contents--texts__title {
+  margin-top: 10%;
+  /* margin-bottom: 80px; */
+}
+
+.contents--texts__more {
+  margin-top: 25px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  background-color: #79c4de;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+
+.contents--texts__more:hover {
+  background-color:	#BAD3FF;
+  color:#007bff;
+  cursor: pointer;
+  /* color: black; */
+}
+
+/* .moreBtn {
+  text-align: center;
+  line-height: 40px;
+  background-color: #6633FF;
+  height:40px;
+  width:100px; */
+/* } */
+
+
+
+
+.modalfield{
+  margin: 0 auto;
+  padding: 40px;
+}
+.modal{
+  /* display: none; */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.modal__bg{
+  /* background: rgba(0,0,0,0.8); */
+  background: rgba(121,196,222,0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+.modal__content{
+  border-radius: 4px;
+  background: #fff;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.leftField {
+  width:45%;
+  /* display: flex;
+  align-items: center; */
+}
+
+.modal-image {
+  margin-top: 30px;
+  width:100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.linkArea {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+
+
+
+.modal-texts {
+  width: 45%;
+}
+
+.modal-titlearea {
+  margin-bottom: 10px;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.closeBtn {
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  background-color: #79c4de;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+
+.closeBtn:hover {
+  background-color:	#BAD3FF;
+  cursor: pointer;
+  text-decoration: none;
+  color:#007bff;
+  /* color: black; */
+}
+
+.closeArea {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.youtubeLink {
+  font-weight: bold;
+  color: #79c4de;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+
+.youtubeLink:hover {
+  color:#007bff;
+  text-decoration: none;
+}
+
+.youtubeIcon {
+  color: #79c4de;
+  font-size: 28px;
+}
+
+
+.noteLink {
+  font-weight: bold;
+  color: #79c4de;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+
+.noteLink:hover {
+  color:#007bff;
+  text-decoration: none;
+}
+
+
+.noteIcon {
+  color: #79c4de;
+  font-size: 28px;
+  padding-left: 8px;
+}
+
+.Icons {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+
+.Icons:hover {
+  /* background-color:	#BAD3FF; */
+  cursor: pointer;
+  text-decoration: none;
+  color:#007bff;
+}
+
+
