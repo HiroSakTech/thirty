@@ -162,11 +162,86 @@ legend {
 .creatorTitle {
   text-align: center;
   font-size: 32px;
+  margin-bottom: 24px;
 }
 
 .creatorContents {
+  /* height:500px; */
   background-color: white;
-  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+.creatorTexts {
+  width: 45%;
+}
+
+.creatorIndex {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.creatorMessages {
+  margin : 12px;
+}
+
+.creatorImages {
+  /* margin-top: 20%; */
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creatorPhoto {
+  object-fit: cover;
+  width:100%;
+}
+
+.aboutThirty {
+  text-align: center;
+  margin: 32px 20px 0px 20px;
+  /* background-color: red;
+  color:white;
+  font-size: 24px;
+  cursor: pointer; */
+}
+
+.trailer {
+  border-radius: 2px;
+  font-size: 22px;
+  text-decoration: none;
+  color:white;
+  background-color: #79c4de;
+  padding: 8px 12px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+
+.trailer:hover {
+  text-decoration: none;
+  background-color:	#BAD3FF;
+  color:#007bff;
+  cursor: pointer;
+  /* color: black; */
+}
+
+.creatorName {
+  font-size: 24px;
+}
+
+
+.aboutProfile {
+  text-align: center;
+  margin: 24px 20px 0px 20px;
+  background-color: #79c4de;
+  color:white;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .introduce {
@@ -298,6 +373,36 @@ legend {
   display: flex;
   justify-content: space-around;
 }
+
+.modalfield2{
+  margin: 0 auto;
+  padding: 40px;
+}
+.modal2{
+  /* display: none; */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.modal__bg2{
+  /* background: rgba(0,0,0,0.8); */
+  background: rgba(121,196,222,0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+.modal__content2{
+  border-radius: 4px;
+  background: #fff;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+}
+
 
 .leftField {
   width:45%;
