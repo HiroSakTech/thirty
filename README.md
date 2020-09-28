@@ -9,5 +9,5 @@
 
 フロントエンドのみの静的サイトです。
 
-使用技術は**Contentful(ヘッドレスCMS)、html、css、JavaScript、JQuery**になります。
+使用技術は**Contentful(ヘッドレスCMS)、Bootstrap、html、css、JavaScript、JQuery**になります。
 
