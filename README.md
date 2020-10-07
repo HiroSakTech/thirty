@@ -11,3 +11,10 @@
 
 使用技術は**Contentful(ヘッドレスCMS)、Bootstrap、html、css、JavaScript、JQuery**になります。
 
+<br>
+<br>
+
+# その他注力した点
+
+S3でのアップロードを行っていますが、CloudFrontを利用しセキュリティにも配慮、またドメインとの紐付けも行っております。
+
