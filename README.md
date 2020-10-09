@@ -5,6 +5,17 @@
 
 ヘッドレスCMS「Contentful」を利用しデプロイはawsのS3で行うことにより、ノンプログラマーである友人が簡単かつ低コストでサイトへの投稿ができる様に実装しました。
 
+<br>
+<br>
+
+# URL
+
+[30x30](https://www.thirty-thirty.net/)
+(https://www.thirty-thirty.net/)
+
+<br>
+<br>
+
 # 使用技術
 
 フロントエンドのみの静的サイトです。
