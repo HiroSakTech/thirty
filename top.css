@@ -261,7 +261,7 @@ legend {
 
 .contents {
   padding: 40px 20px;
-  margin: 20px;
+  margin: 20px 20px 60px 20px;
   /* background-color: #FFFAFA;
   border-radius: 4px;
   box-shadow: 4px 4px #eae1cf; */
@@ -279,7 +279,6 @@ legend {
 }
 
 .contents--texts {
-  height: 300px;
   width: 45%;
 }
 
@@ -369,7 +368,7 @@ legend {
   position: absolute;
   top: 50%;
   transform: translate(-50%,-50%);
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: space-around;
 }
@@ -527,3 +526,83 @@ legend {
 }
 
 
+@media screen and (min-width:0px) and ( max-width:991px) {
+  /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+
+  .icons {
+    font-size: 2.7rem;
+  }
+
+  .aboutKobaken {
+    font-size: 3.9rem;
+  }
+
+  .prof {
+    font-size: 2.7rem;
+  }
+
+  .creatorName {
+    font-size: 2.7rem;
+  }
+
+  .creatorMessages {
+    text-align: center;
+  }
+
+  .contents {
+    font-size: 3.2rem;
+  }
+
+  .message {
+    font-size: 3.2rem;
+  }
+
+  .title {
+    font-size: 2.7rem;
+  }
+
+  .firstmessage {
+    font-size: 2.5rem;
+  }
+
+  .contents--texts__more {
+    margin-top: 25px;
+    color: white;
+    font-size: 3.2rem;
+    text-align: center;
+    background-color: #79c4de;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+  }
+
+  .contents--texts__more:hover {
+    background-color:	#BAD3FF;
+    color:#007bff;
+    cursor: pointer;
+    /* color: black; */
+  }
+
+  .trailer {
+    font-size: 2.7rem;
+  }
+
+  .modal-title {
+    font-weight: bold;
+    font-size: 2.7rem;
+  }
+
+  .produces {
+    font-size: 1.8rem;
+    font-weight:bold;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  .closeBtn {
+    font-size: 2.7rem;
+  }
+}
