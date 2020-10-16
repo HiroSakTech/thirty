@@ -10,7 +10,8 @@
 
 # URL
 
-[30x30](https://s3-ap-northeast-1.amazonaws.com/www.thirty-thirty/top.html)
+[30x30](https://www.thirty-thirty.net/)
+(https://www.thirty-thirty.net/)
 <br>
 <br>
 
